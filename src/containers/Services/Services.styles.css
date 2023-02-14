@@ -1,0 +1,132 @@
+.parallax {
+  background-image: url("https://desentupidora.top/wp-content/uploads/2021/04/desentupidora-de-pia.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-box h3 {
+  position: relative;
+  z-index: 2;
+}
+
+.cover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  max-height: 800px;
+  width: 100%;
+  z-index: 1;
+}
+
+.inside-container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.content-box {
+  background-color: #339989;
+  max-width: 250px;
+  height: 240px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s !important;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-box svg {
+  transition: 0.5s !important;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #7de2d1;
+  position: absolute;
+  bottom: -22px;
+  left: 30px;
+}
+.content-box:hover > svg {
+  transform: rotate(360deg);
+  background-color: #339989;
+}
+.content-box:hover {
+  background-color: #7de2d1;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.inside-image {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.5;
+  transition: 0.5s;
+  filter: invert(100%) sepia(100%);
+}
+
+.content-box:hover > img {
+  right: 25px;
+  filter: invert(0%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .content-box {
+    max-width: 200px;
+    height: 200px;
+  }
+  .content-box h1 {
+    font-size: 18px;
+  }
+  .content-box h3 {
+    font-size: 16px;
+  }
+  .content-box:not(:first-of-type) img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box-container {
+    flex-direction: column;
+  }
+  .box-container .content-box {
+    width: 100% !important;
+    max-width: 80%;
+    height: 130px;
+  }
+  .text {
+    padding: 5px !important;
+  }
+  .content-box svg {
+    display: none;
+  }
+  .content-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .content-box h3,
+  .content-box h1 {
+    margin: 0;
+  }
+  .box-container {
+    margin-bottom: 25px;
+  }
+  .parallax,
+  .cover {
+    min-height: 1400px;
+  }
+}

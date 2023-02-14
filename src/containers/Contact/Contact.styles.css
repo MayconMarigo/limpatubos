@@ -1,0 +1,139 @@
+.contact-section {
+  background-color: #dff4f1;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-container svg {
+  background-color: #339989;
+  padding: 20px;
+  border-radius: 50%;
+}
+.contact h2 {
+  font-size: 20px !important;
+  margin: 10px 0 0 0;
+}
+.contact h3 {
+  font-size: 16px !important;
+  margin: 10px 0;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1280px;
+  margin: 80px 0;
+  display: flex;
+}
+
+.form {
+  width: 70%;
+  padding: 50px 50px 100px 50px;
+}
+.img-form {
+  width: 30%;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-input > textarea {
+  min-height: 120px !important;
+}
+.form-input > input,
+.form-input > textarea {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 0 !important;
+  padding-bottom: 10px;
+}
+.form-input > input,
+.form-input > textarea {
+  width: 100%;
+}
+
+.footer-divider {
+  width: 50px;
+  height: 5px;
+  background-color: #339989;
+  transition: 0.3s;
+}
+
+.divider-container:hover > .footer-divider {
+  width: 100px;
+}
+
+.submit-container input {
+  cursor: pointer;
+  margin-top: 25px;
+  background-color: #339989;
+  outline: 0;
+  border: 0;
+  padding: 15px 35px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-section {
+    margin-top: 100px;
+  }
+  .contacts-container {
+    max-width: 980px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-section {
+    margin-top: 30px;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contacts-container {
+    flex-direction: column;
+  }
+  .img-form {
+    display: none;
+  }
+  .form-container {
+    margin: 30px 0;
+  }
+  .form {
+    padding: 15px;
+    width: 100%;
+  }
+  .form h1 {
+    text-align: center;
+  }
+  .form-width {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+  .form-input input,
+  .form-input textarea {
+    width: 90% !important;
+  }
+  .contact-section {
+    padding: 30px 0 0 0;
+  }
+}

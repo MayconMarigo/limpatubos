@@ -1,0 +1,45 @@
+:root {
+  font-family: Montserrat, Helvetica, Arial, sans-serif !important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+}
+
+svg {
+  cursor: pointer;
+}
+a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+}
+h3 {
+  color: rgba(0, 0, 0, 0.7);
+}
+body {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+}
+button:hover {
+}
