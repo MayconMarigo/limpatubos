@@ -64,7 +64,7 @@ function Contact() {
     { id: 3, icon: "", title: "Licenças Ambientais", subtitle: "IBAMA - IMA" },
   ];
   return (
-    <section className="contact-section" id="Contact">
+    <section className="contact-section">
       <div className="contacts-container">
         {contacts.map((c) => (
           <div className="contact" key={c?.id}>
@@ -84,7 +84,7 @@ function Contact() {
           </div>
         ))}
       </div>
-      <div className="form-container">
+      <div className="form-container" id="Contact">
         <form onSubmit={sendEmail} className="form">
           <h1>Contate-nos Agora.</h1>
           <div
