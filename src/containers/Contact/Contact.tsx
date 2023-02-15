@@ -13,10 +13,10 @@ function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_r6xzqml",
-        "template_js6anod",
+        "service_sqp9dai",
+        "template_nf7ix3k",
         form,
-        "eofBXW4d-_tr5OjSh"
+        "f7ZDftnHaOCyVHkuc"
       )
       .then(
         (result) => {
@@ -116,7 +116,7 @@ function Contact() {
           >
             <div className="form-input">
               <h4>SEU EMAIL</h4>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" name="from_email" />
             </div>
           </div>
           <div
