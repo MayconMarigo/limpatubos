@@ -1,9 +1,9 @@
 import { useState } from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import PhoneIcon from "@mui/icons-material/Phone";
 import Logo from "../../assets/limpa-tubos-logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 import "./Header.styles.css";
 
@@ -25,25 +25,33 @@ function Header() {
             {expanded && (
               <div className="expanded-menu">
                 <div className="mobile-phones-menu">
-                  <PhoneIcon />
-                  <a
-                    href={`https://wa.me/43984190269?text=${msg}`}
-                    target="_blank"
-                  >
-                    (43)98419-0269
-                  </a>
-                  <a
-                    href={`https://wa.me/43999843838?text=${msg}`}
-                    target="_blank"
-                  >
-                    (43)99984-3838
-                  </a>
-                  <a
-                    href={`https://wa.me/43996281558?text=${msg}`}
-                    target="_blank"
-                  >
-                    (43)99628-1558
-                  </a>
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <WhatsAppIcon />
+                    <a
+                      href={`https://wa.me/43984190269?text=${msg}`}
+                      target="_blank"
+                    >
+                      (43)98419-0269
+                    </a>
+                  </div>
+                  <WhatsAppIcon />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <a
+                      href={`https://wa.me/43999843838?text=${msg}`}
+                      target="_blank"
+                    >
+                      (43)99984-3838
+                    </a>
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <WhatsAppIcon />
+                    <a
+                      href={`https://wa.me/43996281558?text=${msg}`}
+                      target="_blank"
+                    >
+                      (43)99628-1558
+                    </a>
+                  </div>
                 </div>
                 <div className="mobile-links-menu">
                   <nav>
@@ -70,13 +78,15 @@ function Header() {
             )}
           </div>
           <div className="phone-container">
-            <PhoneIcon />
+            <WhatsAppIcon />
             <a href={`https://wa.me/43984190269?text=${msg}`} target="_blank">
               (43)98419-0269
             </a>
+            <WhatsAppIcon />
             <a href={`https://wa.me/43999843838?text=${msg}`} target="_blank">
               (43)99984-3838
             </a>
+            <WhatsAppIcon />
             <a href={`https://wa.me/43996281558?text=${msg}`} target="_blank">
               (43)99628-1558
             </a>
