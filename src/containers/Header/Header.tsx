@@ -123,6 +123,15 @@ function Header() {
           </nav>
         </div>
       </div>
+      <div className="floating-container">
+        <div
+          className="floating-button"
+          onClick={() => window.open(`https://wa.me/43999843838?text=${msg}`)}
+        >
+          <WhatsAppIcon />
+          <p>Peça um orçamento!</p>
+        </div>
+      </div>
     </>
   );
 }
