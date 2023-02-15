@@ -92,6 +92,7 @@
 .floating-button {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #25d366;
   width: 100%;
   max-width: 250px !important;
