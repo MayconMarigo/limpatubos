@@ -47,8 +47,8 @@ function Footer() {
           </div>
           <div className="footer-content-container">
             <PhoneIcon />
-            <a href={`https://wa.me/43999843838?text=${msg}`} target="_blank">
-              <h5 style={{ margin: 0 }}>(43) 99984-3838</h5>
+            <a href={`https://wa.me/43996281558?text=${msg}`} target="_blank">
+              <h5 style={{ margin: 0 }}>(43) 99628-1558</h5>
             </a>
           </div>
           <div className="footer-content-container">

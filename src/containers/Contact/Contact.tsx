@@ -49,7 +49,7 @@ function Contact() {
       id: 1,
       icon: "",
       title: "Telefone:",
-      subtitle: "(43)98419-0269",
+      subtitle: "(43)99628-1558",
       phone: true,
     },
     ,
