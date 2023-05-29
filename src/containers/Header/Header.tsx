@@ -16,6 +16,33 @@ function Header() {
   );
   return (
     <>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11095764579">
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11095764579');
+      </script>
+
+      <!-- Event snippet for WhatsApp conversion page
+      In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+      <script>
+      function gtag_report_conversion(url) {
+      var callback = function () {
+      if (typeof(url) != 'undefined') {
+      window.location = url;
+      }
+      };
+      gtag('event', 'conversion', {
+      'send_to': 'AW-11095764579/_BBECLX_lKUYEOPc76op',
+      'event_callback': callback
+      });
+      return false;
+      }
+      </script>
+       <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQ5JCHE4M0"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-DQ5JCHE4M0'); </script>
       <header className="header" id="Start">
         <div className="header-top">
           <div className="responsive-menu">
