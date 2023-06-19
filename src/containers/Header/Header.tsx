@@ -31,6 +31,13 @@ function Header() {
                     <a href={`tel:+554333342273`}>(43)3334-2273</a>
                     <WhatsAppIcon style={{ marginLeft: 10 }} />
                     <a
+                      href={`https://wa.me/4491514382?text=${msg}`}
+                      target="_blank"
+                    >
+                      (44)9151-4382
+                    </a>
+                    <WhatsAppIcon style={{ marginLeft: 10 }} />
+                    <a
                       href={`https://wa.me/43996281558?text=${msg}`}
                       target="_blank"
                     >
@@ -65,6 +72,10 @@ function Header() {
           <div className="phone-container">
             <PhoneIcon />
             <a href={`tel:+554333342273`}>(43)3334-2273</a>
+            <WhatsAppIcon />
+            <a href={`https://wa.me/4491514382?text=${msg}`} target="_blank">
+              (44)9151-4382
+            </a>
             <WhatsAppIcon />
             <a href={`https://wa.me/43996281558?text=${msg}`} target="_blank">
               (43)99628-1558
@@ -105,7 +116,7 @@ function Header() {
       <div className="floating-container">
         <div
           className="floating-button"
-          onClick={() => window.open(`https://wa.me/43996281558?text=${msg}`)}
+          onClick={() => window.open(`https://wa.me/4491514382?text=${msg}`)}
         >
           <WhatsAppIcon />
           <p>Peça um orçamento!</p>
