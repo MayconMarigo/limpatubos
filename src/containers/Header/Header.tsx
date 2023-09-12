@@ -14,6 +14,16 @@ function Header() {
   const msg = encodeURIComponent(
     "Olá! Tenho interesse em contratar um serviço com vocês."
   );
+
+  const handleClickAndTag = () => {
+    //@ts-ignore
+    window.dataLayer = window.dataLayer || [];
+    //@ts-ignore
+    window.dataLayer.push({
+      'event': 'click_button_whatsapp'
+    })
+    window.open(`https://wa.me/4491514382?text=${msg}`);
+  }
   return (
     <>
       <header className="header" id="Start">
@@ -116,7 +126,7 @@ function Header() {
       <div className="floating-container">
         <div
           className="floating-button"
-          onClick={() => window.open(`https://wa.me/4491514382?text=${msg}`)}
+          onClick={() => handleClickAndTag()}
         >
           <WhatsAppIcon />
           <p>Peça um orçamento!</p>
